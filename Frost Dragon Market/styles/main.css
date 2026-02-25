@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "copperplategothic_bold";
+    src: url("../fonts/copperplategothic_bold.woff"),
+         url("../fonts/copperplategothic_bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    margin: 0;
+    font-family: "copperplategothic_bold", serif;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #A4D32A;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid #000000;
+}
+
+footer {
+    background-color: #868686;
+    padding: 5px;
+    padding: 18px;
+}
+
+#header_left {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 100px;
+    margin: 25px;
+    border: 2px solid #000000;
+}
+
+#header_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#header_right > a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+hr {
+    margin-bottom: 20px;
+    width: 95%;
+    height: 2px;
+    background-color: #000000;
+    border-color: #000000;
+}
+
+#map {
+    border: 2px solid #000000;
+}
+
+#gallery {
+    max-width: fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+#gallery > img {
+    max-width: 450px;
+    border: 2px solid #000000;
+}
+
+#store_photos > img {
+    width: 500px;
+    border: 2px solid #000000;
+}
+
+@media (max-width: 1470px) {
+    #gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #store_photos > img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 950px) {
+    #gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
